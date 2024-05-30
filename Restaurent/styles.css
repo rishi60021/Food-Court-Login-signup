@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.background {
+    background-image: url('./resimg.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo h1 {
+    font-size: 2.5em;
+    color: #FF6347;
+    margin: 0;
+}
+
+.nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav li {
+    margin-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #FF6347;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.nav a:hover {
+    color: #FF4500;
+}
+
+.login-form, .signup-form {
+    display: none;
+}
+
+#login:target, #signup:target {
+    display: block;
+}
+
+.login-form h2, .signup-form h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FF4500;
+}
+
+#error {
+    color: red;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
